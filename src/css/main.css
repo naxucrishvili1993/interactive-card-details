@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-section {
+  position: relative;
+}
+.bg-section-bg {
+  aspect-ratio: 16/9;
+  max-height: 30vh;
+  width: 100vw;
+}
+.bg-section-front-side, .bg-section-back-side {
+  position: absolute;
+}
+.bg-section-back-side {
+  right: 5%;
+  top: 15%;
+}
+.bg-section-back-side-cvc {
+  color: hsl(270deg, 3%, 87%);
+  font-size: 18px;
+  position: absolute;
+  right: 30px;
+  top: 58px;
+}
+.bg-section-front-side {
+  bottom: -10%;
+  left: 10%;
+}
+.bg-section-front-side p {
+  color: hsl(270deg, 3%, 87%);
+  font-size: 20px;
+  position: absolute;
+}
+.bg-section-front-side-number {
+  bottom: 40px;
+  left: 10px;
+}
+.bg-section-front-side-number .quarter-span {
+  margin-right: 7px;
+}
+.bg-section-front-side-name {
+  bottom: 15px;
+  font-size: 8px;
+  left: 10px;
+  letter-spacing: 1px;
+}
+.bg-section-front-side-date {
+  bottom: 15px;
+  font-size: 14px !important;
+  right: 10px;
+}
+.bg-section-card {
+  width: 260px;
+}
+.bg-section-card-logo {
+  left: 15px;
+  position: absolute;
+  top: 15px;
+  width: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+  .bg-section-bg {
+    content: url("../images/bg-main-desktop.png");
+    height: 100vh;
+    max-height: 100vh;
+    width: 50vw;
+  }
+  .bg-section-front-side {
+    bottom: 25%;
+    left: 20%;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+  form input,
+form button {
+    width: 30vw !important;
+  }
+  form select {
+    width: 15vw !important;
+  }
+  .complete-section {
+    margin-left: 10%;
+  }
+}
+form {
+  padding-top: 3rem;
+}
+form input,
+form select,
+form button {
+  height: 40px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+}
+form button {
+  background-color: hsl(278deg, 68%, 11%);
+  border-radius: 7px;
+  color: hsl(270deg, 3%, 87%);
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  width: 50vw;
+  transition: all ease-in-out 0.15s;
+}
+form button:hover {
+  opacity: 0.9;
+}
+form input {
+  font-family: "Space Grotesk", sans-serif;
+  margin-bottom: 20px;
+  padding-left: 8px;
+  width: 50vw;
+}
+form input::-moz-placeholder {
+  color: hsl(279deg, 6%, 55%);
+}
+form input:-ms-input-placeholder {
+  color: hsl(279deg, 6%, 55%);
+}
+form input::placeholder {
+  color: hsl(279deg, 6%, 55%);
+}
+form select {
+  width: 25vw;
+}
+
+label {
+  display: block;
+}
+
+.minimized {
+  color: red;
+}
+
+.complete-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4rem;
+}
+.complete-section img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+.complete-section h1 {
+  letter-spacing: 2px;
+}
+.complete-section p {
+  color: hsl(279deg, 6%, 55%);
+  margin: 10px 0;
+}
+.complete-section button {
+  background-color: hsl(278deg, 68%, 11%);
+  border-radius: 8px;
+  color: hsl(270deg, 3%, 87%);
+  cursor: pointer;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  height: 40px;
+  margin: 10px 0;
+  width: 30vw;
+  transition: all ease-in-out 0.15s;
+}
+.complete-section button:hover {
+  opacity: 0.9;
+}/*# sourceMappingURL=main.css.map */
